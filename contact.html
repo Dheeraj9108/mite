@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Site</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <section class="sub_header">
+        <nav>
+            <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+            <div class="nav_links" id="nav-links">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">COURSE</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+       <h1>Contact US</h1>
+    </section>
+
+<!-- Contact Us -->
+
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.765066691495!2d74.96428611464607!3d13.050620690804086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba3557f8322286d%3A0x258a2e8d6d4b45b0!2sMangalore%20Institute%20of%20Technology%20and%20Engineering%2C%20MITE!5e0!3m2!1sen!2sin!4v1644128975589!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <section class="contact_us">
+        <div class="row">
+            <div class="contact_col">
+                <div>
+                    <i class='bx bxs-home'></i>
+                    <span>
+                        <h5>XYZ Road, ABC Building</h5>
+                        <p>Banglore, Karnataka, In</p>
+                    </span>
+                </div>
+                <div>
+                    <i class='bx bxs-phone'></i>
+                    <span>
+                        <h5>+1 0123456789</h5>
+                        <p>Monday to Saturday, 10AM to 6PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class='bx bxs-envelope' ></i>
+                    <span>
+                        <h5>@gmail.com</h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact_col">
+                <form action="" >
+                    <input type="text" placeholder="Enter Your Name" required>
+                    <input type="email" placeholder="Enter Your Email" required>
+                    <input type="email" placeholder="Enter Your Subject" required>
+                    <textarea  rows="8" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero_btn red_btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod accusamus, quisquam facilis reiciendis quasi ab atque cumque asperiores, <br> eius cupiditate maxime aliquid, unde soluta quo corporis distinctio explicabo consequatur alias.</p>
+        <div class="icon">
+            <i class='bx bxl-instagram'></i>
+            <i class='bx bxl-facebook'></i>
+            <i class='bx bxl-whatsapp'></i>
+            <i class='bx bxl-linkedin'></i>
+        </div>
+        <p>Made with <span>❤</span> Dheeraj</p>
+    </section>
+    
+    <script> 
+        var nav_links = document.getElementById('nav-links');
+        function showMenu(){
+            nav_links.style.right = "0";
+        }
+        function hideMenu(){
+            nav_links.style.right = "-200px"
+        }
+    </script>
+</body>
+</html>

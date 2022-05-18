@@ -1,0 +1,109 @@
+.admission_grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 50px;
+    width: 74%;
+    margin: 50px auto;
+    font-size: 18px;
+    line-height: 35px;
+    text-align: justify;
+    color: #1b4e9b;
+}
+.admsn_col_1{
+    display: grid;
+    grid-template-rows: repeat(10,auto);
+    grid-row-gap:20px ;
+}
+.admsn_col_1 .btn{
+    margin-bottom: 0;
+    margin-top: 20px;
+    justify-content: left;
+}
+.admsn_col_1 .box{
+   
+    background: #f90;
+}
+.admsn_heading{
+    color: #000;
+    font-size: 30px;
+    font-weight: 900;
+}
+.admsn_sheading{
+    color: #000;
+    font-weight: 900;
+}
+.admsn_item:nth-child(2){
+    padding: 20px;
+    color: #fff;
+    background: #1b4e9b;
+}
+.admsn_item ul{
+  padding-left: 40px;
+}
+.admsn_l_table{
+    display: grid;
+    grid-template-columns: auto 0.3fr;
+    grid-template-rows: repeat(auto,1fr);
+}
+.admsn_l_table_item{
+    padding: 7px;
+    border: 1px solid #e2e2e2;
+}
+.cent{
+    text-align: center;
+}
+.admsn_l_table_item:nth-child(1),.admsn_l_table_item:nth-child(2){
+    font-weight: 900;
+}
+.admsn_item:nth-child(3) .admsn_sheading,.admsn_item:nth-child(4) .admsn_sheading,.admsn_item:nth-child(5) .admsn_sheading{
+    margin-bottom: 10px;
+}
+.admsn_item:nth-child(3) .admsn_heading{
+    margin-bottom: 10px;
+
+}
+
+.admsn_2item:first-child{
+    display: grid;
+    grid-template-rows: repeat(5,auto);
+    row-gap: 20px;
+    padding: 45px;
+    /* flex-direction: column; */
+    background: #fbb020;
+    margin-bottom: 20px;
+}
+
+.admsn_2item:first-child .admsn_heading{
+    font-size: 28px;
+    margin-bottom: 0;
+    color: #fff;
+}
+.admsn_box{
+    margin: 10px 0;
+    padding: 30px;
+    background: #eaeaea;
+}
+.admsn_box .admsn_sheading{
+    color: #1b4e9b;
+}
+.admsn_2item:first-child input,.admsn_2item:first-child textarea{
+    padding: 15px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+}
+.admsn_2item:first-child .sbtn input{
+    background: #1b4e9b;
+    color: #fff;
+    padding: 18px 40px;
+    font-size: 18px;
+    font-weight: 900;
+    transition: 0.4s;
+}
+.admsn_2item:first-child .sbtn input:hover{
+   background: rgb(233, 115, 5);
+   color: #1b4e9b;
+}
+.admsn_2item:first-child input::placeholder , .admsn_2item:first-child textarea::placeholder{
+    font-size: 18px;
+}
